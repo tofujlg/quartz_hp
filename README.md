@@ -9,6 +9,14 @@ Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility 
 
 [Join the Discord Community](https://discord.gg/cRFFHYye7t)
 
+## Memo
+
+Run server locally
+
+```shell
+npx quartz build --serve
+```
+
 ## Sponsors
 
 <p align="center">
