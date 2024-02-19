@@ -8,8 +8,9 @@ export const sharedPageComponents: SharedLayout = {
   header: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      GitHub: "https://github.com/tofujlg",
+      "Twitter(X)": "https://twitter.com/jujekebab",
+      Zenn: "https://twitter.com/jujekebab",
     },
   }),
 }
@@ -29,21 +30,11 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Darkmode(),
     Component.DesktopOnly(Component.Explorer()),
     Component.DesktopOnly(
-      //TODO: Create slugs
       Component.RecentNotes({
-        title: "Recent Blog Posts",
-        limit: 4,
-        filter: (f) =>
-          f.slug!.startsWith("posts/") && f.slug! !== "posts/index" && !f.frontmatter?.noindex,
-        linkToMore: "posts/" as SimpleSlug,
-      }),
-    ),
-    Component.DesktopOnly(
-      Component.RecentNotes({
-        title: "Recent Notes",
+        title: "Recent Posts",
         limit: 3,
-        // filter: (f) => f.slug!.startsWith("notes/"),
-        linkToMore: "notes/" as SimpleSlug,
+        filter: (f) => f.slug!.startsWith("blogs/"),
+        linkToMore: "blogs/2023/" as SimpleSlug,
       }),
     ),
   ],
