@@ -11,7 +11,7 @@ Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility 
 
 ## Memo
 
-Run server locally
+Run local server
 
 ```shell
 npx quartz build --serve
