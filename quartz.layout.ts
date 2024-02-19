@@ -11,6 +11,7 @@ export const sharedPageComponents: SharedLayout = {
       GitHub: "https://github.com/tofujlg",
       "Twitter(X)": "https://twitter.com/jujekebab",
       Zenn: "https://twitter.com/jujekebab",
+      Vimeo: "https://vimeo.com/jlgkohei",
     },
   }),
 }
@@ -34,7 +35,7 @@ export const defaultContentPageLayout: PageLayout = {
         title: "Recent Posts",
         limit: 3,
         filter: (f) => f.slug!.startsWith("blogs/"),
-        linkToMore: "blogs/2023/" as SimpleSlug,
+        linkToMore: "blogs/" as SimpleSlug,
       }),
     ),
   ],
